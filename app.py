@@ -1,3 +1,5 @@
-from signLanguage.logger import logging
+from signLanguage.pipeline.training_pipeline import TrainPipeline
 
-logging.info("jecky welcomes you for the first time")
+obj = TrainPipeline()
+obj.run_pipeline()
+print("Training pipeline finished!")
